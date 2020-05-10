@@ -1,6 +1,6 @@
 {
   "name": "typed-jsx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Strongly typed JSX and helpers for creating JSX-like bindings",
   "repository": "https://github.com/gfmio/typed-jsx",
   "author": {
