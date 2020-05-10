@@ -1,4 +1,4 @@
-import { JSXElement, JSXIntrinsicElement, JSXIntrinsicElements } from './types';
+import { JSXElement } from './types';
 import isJSXElement from './isJSXElement';
 
 export type VisitorFunction = {
@@ -30,6 +30,7 @@ async function visitInternal(jsx: any, parent: JSXElement | null, visitor: Visit
   }
 }
 
+/** Traverses the hierarchy of JSX elements and calls them with the visitor */
 export default function visit(jsx: JSXElement, visitor: VisitorFunction) {
   return visitInternal(jsx, null, visitor);
 }
