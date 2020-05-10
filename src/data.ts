@@ -32,11 +32,9 @@ function data<P extends object, R>(element: ComponentType<P, R>, props: P, ...ch
 
 namespace data {
   export namespace JSX {
-    /** A JSX element describes a function to execute or a class to instantiate and its parameters */
     export type Element = any;
     export type IntrinsicElements = {};
     export type ElementClass = ComponentInstance;
-    export interface ElementAttributesProperty {}
     export interface IntrinsicAttributes {}
     export interface IntrinsicClassAttributes<T> {}
     export interface ElementChildrenAttribute {

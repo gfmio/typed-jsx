@@ -54,7 +54,8 @@ namespace jsx {
     export type Element = JSXElement;
     export type IntrinsicElements = JSXIntrinsicElements;
     export type ElementClass = ComponentInstance;
-    export interface ElementAttributesProperty {}
+    // ElementAtrributesProperty is commented because we read the props type from the function / constructor arguments
+    // export interface ElementAttributesProperty {}
     export interface IntrinsicAttributes {}
     export interface IntrinsicClassAttributes<T> {}
     export interface ElementChildrenAttribute {
